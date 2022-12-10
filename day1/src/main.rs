@@ -1,4 +1,5 @@
 mod iterator_version;
+mod itertools_version;
 
 fn main() -> color_eyre::Result<()> {
     color_eyre::install()?;
@@ -18,6 +19,7 @@ fn main() -> color_eyre::Result<()> {
     println!("{elven_lead:?}");
 
     iterator_version::run();
+    itertools_version::run();
 
     Ok(())
 }
